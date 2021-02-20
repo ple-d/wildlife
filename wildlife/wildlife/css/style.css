@@ -401,28 +401,28 @@ html{
     box-sizing: inherit;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
-    background-color: #000;
 }
 
 /* Header start */
 
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     transition: .2s linear;
-    padding-bottom: 0;
-    z-index: 999;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 19px;
 }
 
 .header_logo {
@@ -430,8 +430,7 @@ img {
     background-size: 70px; 
     border: 0;
     padding-left: 75px;
-
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: normal;
     font-style: normal;
     font-size: 32px;
@@ -439,3 +438,148 @@ img {
     text-transform: uppercase;
     color: #F7F7F7;
 }
+
+.header_list {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header_item {
+    margin-right: 60px;
+}
+
+.header_item:last-child {
+    margin-right: 0px;
+}
+
+.header_link {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 60px;
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+.header_button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 32px;
+    color: #F7F7F7;
+    text-decoration: none;
+    padding: 9px 23px;
+    border: 2px solid #cd6326;
+    border-radius: 5px;
+}
+
+.header_search {
+    height: 60px;
+    width: 32px;
+}
+
+.header_button:hover {
+    background-color: #cd6326;
+}
+
+.header_button:active {
+    background-color: #8F5613;
+    border-color: #8F5613;
+}
+
+/* Header end */
+
+/* Survival start */
+.survival {
+    background-color: #02160b;
+    width: 1440px;
+    height: 780px;
+    background: url(../img/survival-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 200px;
+}
+
+.survival_wrapper {
+    width: 1440px;
+    height: 780px;
+    background: url(../img/survival-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.survival_title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2px;
+    color: #CD6326;
+    padding-bottom: 50px;
+}
+
+.survival_desc {
+    width: 23%;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F7F7F7;
+    padding-bottom: 50px;
+}
+
+.survival_button {
+    background: #CD6326;
+    border-radius: 5px;
+    padding: 17px 42px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+.survival_button:hover {
+    background: #E39128;
+}
+
+.survival_button:active {
+    background: #8F5613;
+}
+
+/* Survival end */
+
+/* Latest articles start */
+
+.last_articles {
+    background-color: #cccccc;
+}
+
+.last_articles-title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #333333;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.last_articles-subtitle {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #666666;
+}
+
+/*Latest articles end */
