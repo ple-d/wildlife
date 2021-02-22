@@ -401,6 +401,11 @@ html{
     box-sizing: inherit;
 }
 
+svg {
+    width: 40px;
+    height: 40px;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -414,7 +419,6 @@ html{
     top: 0;
     left: 0;
     width: 100%;
-    transition: .2s linear;
 }
 
 .header_wrapper {
@@ -493,21 +497,18 @@ html{
 /* Header end */
 
 /* Survival start */
+
 .survival {
-    background-color: #02160b;
-    width: 1440px;
+    background: url(../img/survival-bg.jpg) center no-repeat #02160b;
+    background-size: auto;
     height: 780px;
-    background: url(../img/survival-bg.jpg) no-repeat center;
-    background-size: cover;
     padding-top: 200px;
 }
 
 .survival_wrapper {
-    width: 1440px;
-    height: 780px;
-    background: url(../img/survival-bg.jpg) no-repeat center;
-    background-size: cover;
-}
+    max-width: 100%;
+    height: 100%;
+} 
 
 .survival_title {
     font-family: "Open Sans";
@@ -580,6 +581,173 @@ html{
     line-height: 36px;
     text-align: center;
     color: #666666;
+    padding-bottom: 120px;
 }
 
-/*Latest articles end */
+.full_cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    align-items: center;
+    padding-bottom: 239px;
+}
+
+.art_cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card_pic {
+    width: 100%;
+    transition: 0.15s all;
+}
+
+.card::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.card:hover .card_pic{
+    transform: scale(1.05);
+}
+
+.card_link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.card_title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #F7F7F7;
+    position: absolute;
+    width: 100%;
+    bottom: 77px;
+    text-align: center;
+    z-index: 3;
+}
+
+.card_subtitle {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 27px;
+    color: #F7F7F7;
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+    text-align: center;
+    z-index: 3;
+}
+
+.notification {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+    padding-bottom: 59px;
+}
+
+.input_form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 239px ;
+}
+
+#input_form-field {
+    border: 1px solid #666666;
+    border-right: 0px;
+    border-radius: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    color: #666666;
+    padding: 9px 15px;
+    width: 540px;
+    background-color: #cccccc;
+    box-shadow: none;
+}
+
+.input_form-button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 32px;
+    color: #F7F7F7;
+    text-decoration: none;
+    padding: 9px 33px;
+    border: 1px solid #cd6326;
+    background: #CD6326;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+}
+
+/* Latest articles end */
+
+/* Footer start */
+.footer {
+    background: url(../img/footer-bg.jpg) center no-repeat ;
+    height: 359px;
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 120px;
+}
+
+.bottom_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_link {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 60px;
+    color: #F7F7F7;
+}
+
+.soc_icons {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 27px;
+}
+
+.inst {
+}
+
+/* Footer end */
