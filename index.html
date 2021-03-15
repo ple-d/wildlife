@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wildlife</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
@@ -29,11 +29,11 @@
                         </li>
 
                         <li class="header_item">
-                            <a href="#!"> <img src="../img/svg/search.svg" alt="search" class="header_search"></a>
+                            <a href="#!"> <img src="./assets/img/svg/search.svg" alt="search" class="header_search"></a>
                         </li>
 
                         <li class="header_item">
-                            <a href="#!" class="header_button">Sign In</a>
+                            <a href="#!" class="header_button">Sign in</a>
                         </li>
                     </ul>
                 </nav>
@@ -72,31 +72,28 @@
             </div>
             
             <div class="full_cards">
-                <div class="left">
-                    <a href="#!"><img src="../img/svg/arrow-left.svg" alt="left arrow"></a>
+                <div class="control.left">
+                    <a href="#!"><img src="./assets/img/svg/arrow-left.svg" alt="left arrow"></a>
                 </div>
                 <div class="art_cards">
-                    <figure class="card">
-                        <img src="../img/late-art-1.jpg" alt="deer"  class="card_pic">
+                    <figure class="card.active">
+                        <img src="./assets/img/late-art-1.jpg" alt="deer"  class="card_pic">
                         <h4 class="card_title">Deer</h4>
                         <figcaption class="card_subtitle">Naturalist investigation</figcaption>
-                        <a href="#!" class="card_link"></a>
                     </figure>
-                    <figure class="card">
-                        <img src="../img/late-art-2.jpg" alt="squirrel" class="card_pic">
+                    <figure class="card.active">
+                        <img src="./assets/img/late-art-2.jpg" alt="squirrel" class="card_pic">
                         <h4 class="card_title">Squirrel</h4>
                         <figcaption class="card_subtitle">Kamikaze squirrels</figcaption>
-                        <a href="#!" class="card_link"></a>
                     </figure>
-                    <figure class="card">
-                        <img src="../img/late-art-3.jpg" alt="bird" class="card_pic">
+                    <figure class="card.next">
+                        <img src="./assets/img/late-art-3.jpg" alt="bird" class="card_pic">
                         <h4 class="card_title">Bird</h4>
                         <figcaption class="card_subtitle">Birds Fight club</figcaption>
-                        <a href="#!" class="card_link"></a>
                     </figure>
                 </div>
-                <div class="right">
-                    <a href="#!"><img src="../img/svg/arrow-right.svg" alt="right arrow"></a>
+                <div class="control.right">
+                    <a href="#!"><img src="./assets/img/svg/arrow-right.svg" alt="right arrow"></a>
                 </div>
             </div>
             
@@ -106,7 +103,7 @@
 
             <form>
                 <div class="input_form">
-                    <input type="email" name="email" id="input_form-field" placeholder="E-mail">
+                    <input type="email" name="email" id="input_form-field" placeholder="Email">
                     <input type="button" value="Send" alt="Send" class="input_form-button">
                 </div>
             </form>
@@ -125,23 +122,37 @@
                 </div>
 
                 <ul class="bottom_nav">
-                    <li class="footer_link">Articles</li>
-                    <li class="footer_link">About us</li>
-                    <li class="footer_link">Learn more</li>
+                    <li class="footer_link">
+                        <a href="#1" class="footer_link-link">Articles</a>
+                    </li>
+                    <li class="footer_link">
+                        <a href="#1" class="footer_link-link">About us</a>
+                    </li>
+                    <li class="footer_link">
+                        <a href="#1" class="footer_link-link">Learn more</a>
+                    </li>
                 </ul>
 
                 <ul class="soc_icons">
                     <li class="soc_icon">
-                        <svg class="fb"></svg>
+                        <a href="#!" class="fb">
+                            <img src="./assets/img/svg/fb.svg" alt="facbook">
+                        </a>
                     </li>
                     <li class="soc_icon">
-                        <svg class="inst"></svg>
+                        <a href="#!" class="inst">
+                            <img src="./assets/img/svg/inst.svg" alt="instagramm">
+                        </a>
                     </li>
                     <li class="soc_icon">
-                        <svg class="pint"></svg>
+                        <a href="#!" class="pint">
+                            <img src="./assets/img/svg/pint.svg" alt="pinterest">
+                        </a>
                     </li>
                     <li class="soc_icon">
-                        <svg class="tg"></svg>
+                        <a href="#!" class="tg">
+                            <img src="./assets/img/svg/tg.svg" alt="Telegramm">
+                        </a>
                     </li>
                 </ul>
 
